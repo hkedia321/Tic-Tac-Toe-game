@@ -1,0 +1,92 @@
+/* @group Blink */
+.blink {
+	-webkit-animation: blink 1s linear infinite;
+	-moz-animation: blink 1s linear infinite;
+	-ms-animation: blink 1s linear infinite;
+	-o-animation: blink 1s linear infinite;
+	 animation: blink 1s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+/* @end */
+body{
+	background:linear-gradient(#666666,0%,#00b7ea 100%);
+	background: url('../imgs/world.png');
+	background-size: cover;
+
+	font-family: 'Indie Flower', cursive;
+}
+.border{
+	border:solid red 0.15em;
+}
+.red{
+	color: red;
+}
+div{
+	display:inline-block;
+}
+h1,h3{
+	text-align: center;
+}
+.divgoback{
+	position: absolute;
+	top:10%;
+}
+.divgoback a{
+	padding:1.0% 1.6%;
+	background-color: #0017FF;
+	border-radius: 15%;
+	color:white;
+	text-decoration: none;
+	transition:background-color 0.5s ease 0.1s;
+}
+.divgoback a:hover{
+	background-color: black;
+}
+#playersturn{
+	margin-bottom: -0%;
+}
+.divtic{
+	margin-left: 40%;
+}
+.tabletic{
+	border-color: blue;
+}
+.canvas:focus{
+	outline:;
+}
+.tablepoints{
+	margin-top: -0%;
+	margin-left: 27.5%;
+}
+td,th{
+	text-align: center;
+}
