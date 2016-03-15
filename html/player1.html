@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Harshit Kedia">
+	<link rel="icon" href="../imgs/tic.png">
+	<link rel="stylesheet" type="text/css" href="..\css\bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/css1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="..\js\js1rand.js">
+	</script>
+	<title>1 player Tic-Tac-Toe</title>
+</head>
+<body class="container" onload="onload()">
+	<h1>Tic-Tac-Toe</h1>
+	<h3>Human VS Computer</h3>
+	<div class="container divgoback">
+		<a href="../index.html">Go back</a>
+	</div>
+	<br><br>
+	<h3><span id="playersturn"></span>'s turn</h3>
+	<div class="container divtic">
+		<table class="tabletic" border="1">
+			<tr>
+				<td><canvas width="65%" height="65%" id="canvas1" class="canvas" tabindex="1" onclick="canvasclick(0,0,1)"></canvas></td>
+				<td><canvas width="65%" height="65%" id="canvas2" class="canvas" tabindex="2" onclick="canvasclick(0,1,2)"></canvas></td>
+				<td><canvas width="65%" height="65%" id="canvas3" class="canvas" tabindex="3" onclick="canvasclick(0,2,3)"></canvas></td>
+			</tr>
+			<tr>
+				<td><canvas width="65%" height="65%" id="canvas4" class="canvas" tabindex="4" onclick="canvasclick(1,0,4)"></canvas></td>
+				<td><canvas width="65%" height="65%" id="canvas5" class="canvas" tabindex="5" onclick="canvasclick(1,1,5)"></canvas></td>
+				<td><canvas width="65%" height="65%" id="canvas6" class="canvas" tabindex="6" onclick="canvasclick(1,2,6)"></canvas></td>
+			</tr>
+			<tr>
+				<td><canvas width="65%" height="65%" id="canvas7" class="canvas" tabindex="7" onclick="canvasclick(2,0,7)"></canvas></td>
+				<td><canvas width="65%" height="65%" id="canvas8" class="canvas" tabindex="8" onclick="canvasclick(2,1,8)"></canvas></td>
+				<td><canvas width="65%" height="65%" id="canvas9" class="canvas" tabindex="9" onclick="canvasclick(2,2,9)"></canvas></td>
+			</tr>
+		</table>
+	</div>
+	<div class="container">
+		<table class="tablepoints" border="1">
+			<caption style="text-align:center"><b>Scoreboard</b></caption>
+			<tr><th>Player's name</th><th>&nbsp;Symbol&nbsp;</th><th>&nbsp;Matches won&nbsp;</th><th>Matches drawn</th></tr>
+			<tr><td>Computer</td><td>
+				<canvas width="35%" height="35%" id="canvas10"></canvas>
+			</td><td id="points1">0</td><td rowspan="2" id="matchesdrawn">0</td></tr>
+			<tr><td><input type="text" id="name2" placeholder="Player(edit your name)" onchange="updatename2()"></input></td><td>
+				<canvas width="35%" height="35%" id="canvas11"></canvas>
+			</td><td id="points2">0</td></tr>
+		</table>
+	</div>
+</body>
+</html>
