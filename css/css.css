@@ -1,0 +1,50 @@
+body{
+	background:linear-gradient(#666666,0%,#00b7ea 100%);
+	background: url('../imgs/world.png');
+	background-size: cover;
+
+	font-family: 'Indie Flower', cursive;
+}
+.border{
+	border:solid red 0.15em;
+}
+.red{
+	color: red;
+}
+div{
+	display: inline-block;
+}
+h1{
+	text-align: center;
+	color: #123123;
+}
+h2{
+	margin-top: 15%;
+	text-align: center;
+	color: #321345;
+}
+.options{
+	display: inline-block;
+	margin-top:16%;
+	margin-right: 25%;
+	text-align: center;
+	background-color:blue;
+	padding-top: 1.3%;
+	padding-bottom: 1.3%;
+	padding-left: 1.9%;
+	padding-right: 1.9%;
+	color:red;
+	border-radius: 14%;
+	transition:border-radius 1s ease 0.05s;
+	transition:background-color 0.5s ease 0.05s;
+	transition:transform 1s ease 0.05s;
+}
+.options:hover{
+	border-radius: 25%;
+	background-color: rgba(95, 0, 255, 0.43);
+	transform:scale(1.3,1.3);
+}
+#option1{
+	margin-left: 27%;
+	padding-right: 2.0%;
+}
